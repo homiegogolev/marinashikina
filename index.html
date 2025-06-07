@@ -152,25 +152,14 @@ section {
   </style>
 
 <style>
-body {
-  position: relative;
-  z-index: 0;
-}
-
-/* Размытое фоновое изображение */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url('background_blur.jpg');
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  filter: blur(10px);
-  opacity: 0.6;
+section {
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+  padding: 40px 20px;
+  margin-bottom: 30px;
 }
 </style>
 
@@ -187,15 +176,15 @@ body::before {
 <section class="carousel-section">
 <div class="carousel">
 <div class="carousel-item">
-<img alt="Идеальная фигура" src="ideal.jpg"/>
+<img alt="Идеальная фигура" src="carousel1.jpg"/>
 <div class="caption">Идеальная фигура</div>
 </div>
 <div class="carousel-item">
-<img alt="Круглая попа" src="booty.jpg"/>
+<img alt="Круглая попа" src="carousel2.jpg"/>
 <div class="caption">Круглая попа</div>
 </div>
 <div class="carousel-item">
-<img alt="Плоский живот" src="abs.jpg"/>
+<img alt="Плоский живот" src="carousel3.jpg"/>
 <div class="caption">Плоский живот</div>
 </div>
 </div>
