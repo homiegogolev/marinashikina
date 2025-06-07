@@ -4,6 +4,122 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/3f323e6b22.js" crossorigin="anonymous"></script>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f1ec;
+  color: #2f2f2f;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+header, section {
+  max-width: 700px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+h1, h2, h3 {
+  color: #2f2f2f;
+  font-weight: 600;
+  text-align: center;
+}
+
+p {
+  background: #fdfcfb;
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  border-left: 6px solid #a3b18a;
+  margin-bottom: 1rem;
+}
+
+section p:nth-of-type(even) {
+  background: #f3f1ec;
+  border-left-color: #c9ada7;
+}
+
+.cta-button {
+  background-color: #7a6753;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 32px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 1rem auto;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.cta-button:hover {
+  background-color: #5f4e40;
+}
+
+.icon-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  width: max-content;
+}
+
+.carousel-card {
+  scroll-snap-align: center;
+  flex: 0 0 80%;
+  background-color: #faf8f5;
+  border-radius: 24px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #e6e2dc;
+}
+
+.carousel-card img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #e6e2dc;
+  border-radius: 24px 24px 0 0;
+}
+
+.carousel-card p {
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2f2f2f;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+</style>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Майрафон — Тело мечты</title>
