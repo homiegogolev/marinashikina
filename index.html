@@ -201,7 +201,7 @@ section {
 </ul>
 </div>
 <div class="for-you-image">
-<div class="placeholder">ФОТО: «до/после»</div>
+<img src="final.jpg" class="placeholder-photo" alt="До/после">
 </div>
 </div>
 </section>
@@ -670,5 +670,14 @@ section {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
   }
+
+.placeholder-photo {
+  max-width: 100%;
+  border-radius: 16px;
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  backdrop-filter: blur(4px);
+}
+
 </style>
 </html>
