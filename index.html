@@ -163,6 +163,43 @@ section {
 }
 </style>
 
+
+<style>
+body {
+  position: relative;
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('background_blur.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0.6;
+}
+</style>
+
+
+<style>
+.placeholder-photo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+</style>
+
 </head>
 <body>
 <section class="hero">
@@ -201,7 +238,7 @@ section {
 </ul>
 </div>
 <div class="for-you-image">
-<div class="placeholder">ФОТО: «до/после»</div>
+<img src="final.jpg" class="placeholder-photo" alt="До/после">
 </div>
 </div>
 </section>
