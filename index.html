@@ -1,4 +1,6 @@
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -15,32 +17,55 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
+
+
+<style>
+
+
+</style>
+
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  background: #fdfcfb;
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  border-left: 6px solid #a3b18a;
+}
+
+section p:nth-of-type(even) {
+  background: #f3f1ec;
+  border-left-color: #c9ada7;
+}
+</style>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #f6f7f9;
-  color: #2d2d2d;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f1ec;
+  color: #2f2f2f;
   line-height: 1.6;
   font-size: 16px;
-  -webkit-font-smoothing: antialiased;
 }
 
 header {
   background: #ffffff;
   padding: 2.5rem 1rem 1rem;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e2e0dc;
   text-align: center;
-  animation: fadeIn 1s ease-in;
 }
 
 header h1 {
   font-size: 2rem;
   font-weight: 700;
-  color: #3a3a3a;
+  color: #2f2f2f;
   margin: 0;
 }
 
@@ -50,13 +75,12 @@ section {
   border-radius: 20px;
   padding: 2rem;
   margin: 2rem auto;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
-  border: 1px solid #eaeaea;
-  animation: fadeInUp 1s ease-out;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.03);
+  border: 1px solid #eae5dd;
 }
 
 h2, h3 {
-  color: #333;
+  color: #2f2f2f;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -64,7 +88,7 @@ h2, h3 {
 }
 
 p {
-  color: #555;
+  color: #444;
   margin-bottom: 1rem;
   font-size: 1rem;
 }
@@ -72,7 +96,7 @@ p {
 ul {
   padding-left: 1.4rem;
   margin-bottom: 1rem;
-  color: #555;
+  color: #444;
 }
 
 img {
@@ -84,7 +108,7 @@ img {
 }
 
 .cta-button {
-  background-color: #2e2e2e;
+  background-color: #7a6753;
   color: white;
   text-decoration: none;
   padding: 1rem 2rem;
@@ -97,7 +121,7 @@ img {
 }
 
 .cta-button:hover {
-  background-color: #000;
+  background-color: #5f4e40;
 }
 
 .carousel-wrapper {
@@ -117,49 +141,28 @@ img {
 .carousel-card {
   scroll-snap-align: center;
   flex: 0 0 80%;
-  background-color: #ffffff;
+  background-color: #faf8f5;
   border-radius: 24px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
   overflow: hidden;
   text-align: center;
-  border: 1px solid #e5e5e5;
-  transition: transform 0.3s ease;
-}
-
-.carousel-card:hover {
-  transform: scale(1.02);
+  border: 1px solid #e6e2dc;
 }
 
 .carousel-card img {
   width: 100%;
   display: block;
-  border-bottom: 1px solid #eee;
-  border-radius: 24px 24px 0 0;
+  border-bottom: 1px solid #e6e2dc;
 }
 
 .carousel-card p {
   margin: 1rem;
   font-size: 1rem;
   font-weight: 500;
-  color: #444;
-}
-
-/* Simple animation effects */
-@keyframes fadeIn {
-  from { opacity: 0 }
-  to { opacity: 1 }
-}
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Icons usage */
-.icon {
-  margin-right: 0.5rem;
-  color: #777;
+  color: #2f2f2f;
 }
 </style>
+
 
 
 
