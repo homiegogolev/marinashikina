@@ -200,6 +200,55 @@ body::before {
 }
 </style>
 
+
+<style>
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+section, .hero-content, .program-item, .carousel-item, .caption, .trainer-card, .inside-container, .placeholder-photo {
+  animation: fadeInUp 1s ease both;
+}
+
+section {
+  animation-delay: 0.1s;
+}
+
+.hero-content {
+  animation-delay: 0.2s;
+}
+
+.program-item {
+  animation-delay: 0.3s;
+}
+
+.carousel-item {
+  animation-delay: 0.4s;
+}
+
+.caption {
+  animation-delay: 0.5s;
+}
+
+.trainer-card {
+  animation-delay: 0.6s;
+}
+
+.inside-container {
+  animation-delay: 0.7s;
+}
+
+.placeholder-photo {
+  animation-delay: 0.8s;
+}
+</style>
+
 </head>
 <body>
 <section class="hero">
